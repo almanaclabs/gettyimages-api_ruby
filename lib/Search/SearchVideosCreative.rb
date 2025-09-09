@@ -4,7 +4,7 @@ class SearchVideosCreative < RequestBase
 
 	API_ROUTE = "/v3/search/videos/creative"
     QUERY_PARAM_NAMES = ["age_of_people","collection_codes","collections_filter_type","exclude_nudity","fields","format_available","frame_rates",
-        "keyword_ids","license_models","page","page_size","phrase","product_types","sort_order", "orientations"]
+        "keyword_ids","license_models","page","page_size","phrase","product_types","sort_order", "orientations", "max_clip_length"]
 
 	QUERY_PARAM_NAMES.each do |key|
 		define_method :"with_#{key}" do |value = true| 
